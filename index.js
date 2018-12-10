@@ -4,7 +4,7 @@ const fs = require("fs");
 const path = require("path");
 const axios = require("axios");
 
-const configFile = path.resolve(process.cwd(), 'uploadng.config.json');
+const configFile = path.resolve(process.cwd(), 'upldng.config.json');
 let config;
 let endpoint;
 
@@ -23,7 +23,6 @@ fs.readdir(dir, (err, files) => {
         let ln = file.length - 4;
         return (file.substr(ln) == '.jpg')
     })
-    console.log(matched);
     matched.forEach(image => {
         let imagePath = path.resolve(process.cwd(), image);
         let imageAsBase64 = fs.readFileSync(imagePath, 'base64');

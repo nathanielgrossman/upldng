@@ -1,5 +1,5 @@
 {
-  "name": "uploadng",
+  "name": "upldng",
   "version": "0.0.1",
   "description": "Simple uploader for personal use",
   "main": "index.js",
@@ -14,7 +14,7 @@
   "author": "",
   "license": "ISC",
   "bin": {
-    "uploadng": "./index.js"
+    "upldng": "./index.js"
   },
   "bugs": {
     "url": "https://github.com/nathanielgrossman/uploadng/issues"
