@@ -1,10 +1,10 @@
 # upldng
 Simple image uploader for personal use. Will upload all jpgs in the current directory to a specified endpoint.
 
-##Installation
+## Installation
 `npm install -g upldng`
 
-##Usage
+## Usage
 Add a `upldng.config.json` file in the directory with the following properties:
 ```javascript
 {
