@@ -1,2 +1,4 @@
 .DS_Store
 *.jpg
+uploadng.config.json
+node_modules/
