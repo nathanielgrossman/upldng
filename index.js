@@ -27,7 +27,8 @@ fs.readdir(dir, (err, files) => {
         let imagePath = path.resolve(process.cwd(), image);
         let imageAsBase64 = fs.readFileSync(imagePath, 'base64');
         axios.post(endpoint, {
-                data: imageAsBase64
+                data: imageAsBase64,
+                name: image
             })
             .then(response => {
                 console.log(`Upload of ${image} successful.`)
