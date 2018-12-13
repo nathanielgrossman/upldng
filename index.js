@@ -25,9 +25,9 @@ fs.readdir(dir, (err, files) => {
     })
     matched.forEach(image => {
         let imagePath = path.resolve(process.cwd(), image);
-        let imageAsBase64 = fs.readFileSync(imagePath, 'base64');
+        let imageFile = fs.readFileSync(imagePath);
         axios.post(endpoint, {
-                data: imageAsBase64,
+                data: imageFile,
                 name: image
             })
             .then(response => {
