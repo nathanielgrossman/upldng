@@ -32,6 +32,10 @@ fs.readdir(dir, (err, files) => {
             })
             .then(response => {
                 console.log(`Upload of ${image} successful.`)
+                fs.unlink(imagePath, err => {
+                    if (err) console.log(err)
+                    else console.log(`${image} deleted.`);;
+                })
             })
             .catch(error => {
                 console.log(error)
