@@ -40,10 +40,7 @@ function processImage(image, config) {
     if (config.average) {
         average(imageFile, (err, color) => {
             if (err) console.log(err);
-            else {
-                console.log(color);
-                upload(config.endpoint, imageFile, imagePath, image, color);
-            }
+            else upload(config.endpoint, imageFile, imagePath, image, color);
         })
     } else {
         upload(config.endpoint, imageFile, imagePath, image)
