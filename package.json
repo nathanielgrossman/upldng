@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/nathanielgrossman/uploadng#readme",
   "dependencies": {
-    "axios": "^0.18.0"
+    "axios": "^0.18.0",
+    "image-average-color": "^1.0.0"
   }
 }
